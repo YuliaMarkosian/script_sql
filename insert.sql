@@ -70,6 +70,9 @@ VALUES ('Barbie', '2023')
 INSERT INTO  album  (title, year_of_release)
 VALUES ('Podogdi menya', '2000')
 
+INSERT INTO  album  (title, year_of_release)
+VALUES ('ne izdannoe', '2018')
+
 
 -- заполняем таблицу треки
 INSERT INTO  track  (title, duration, id_album)
@@ -122,6 +125,12 @@ VALUES ('Malyavka', '3:05', '7')
 
 INSERT INTO  track  (title, duration, id_album)
 VALUES ('Begi begi', '4:21', '8')
+
+INSERT INTO  track  (title, duration, id_album)
+VALUES ('Do not worry', '3:16', '9')
+
+INSERT INTO  track  (title, duration, id_album)
+VALUES ('Good bay', '4:06', '9')
 
 
 -- заполняем сборники
@@ -176,6 +185,13 @@ VALUES ('7', '7')
 INSERT INTO singer_album (id_singer, id_album)
 VALUES ('8', '8')
 
+INSERT INTO singer_album (id_singer, id_album)
+VALUES ('2', '1')
+
+DELETE FROM singer_album 
+WHERE ad_singer_album = 13;
+
+
 --заполняем таблицу singer_genre
 
 INSERT INTO singer_genre (id_singer, id_genre)
@@ -216,6 +232,12 @@ VALUES ('7', '5')
 
 INSERT INTO singer_genre  (id_singer, id_genre)
 VALUES ('8', '1')
+
+INSERT INTO singer_genre (id_singer, id_genre)
+VALUES ('2', '2')
+
+DELETE FROM singer_genre 
+WHERE id_singer_genre = 9
 
 --заполняем талицу trak_collection
 
